@@ -1,38 +1,41 @@
 .App {
-  text-align: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background: plum;
+  height: 60px;
+  margin:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Content {
+  height: calc(100% - 60px);
+  margin: 0;
+  padding-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+header mgt-login {
+  --color: white;
+  --background-color--hover: white;
+  --color-hover: plum;
+}
+
+.MessagesHeader {
+  margin-left: 50px;
+  color:gray;
+}
+
+.MessagesMain {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.MessagesList {
+  flex-direction: row;
+  width: 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MessagesBody {
+  background: lightgrey;
+  flex-grow: 1;
 }
